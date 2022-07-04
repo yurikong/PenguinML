@@ -1,12 +1,32 @@
 {
   "name": "penguin-ml",
   "version": "0.1.0",
+  "description": "Penguin Machine Learning Platform is able to prepare data, execute algorithms, monitor progress, and provide outcomes throughout the different stages of machine learning",
+  "keywords": [
+    "Penguin",
+    "Machine Learning",
+    "ML",
+    "PenguinML",
+    "Platform",
+    "Machine Learning Platform"
+  ],
   "private": true,
+  "homepage": "https://github.com/yurikong/PenguinML#readme",
+  "bugs": "jackdu2013@163.com",
+  "license": "MIT",
+  "author": "Jianqiang Du <jackdu2013@163.com> (https://github.com/yurikong)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yurikong/PenguinML.git"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "inspect": "vue-cli-service inspect > inspect.js && gsed -i '1c \\/* eslint-disable */\\nconst config = {' inspect.js",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "test:ci": "yarn lint && yarn test:unit",
+    "pub": "git checkout main && git merge dev && git push && git checkout dev"
   },
   "dependencies": {
     "core-js": "^3.8.3",
