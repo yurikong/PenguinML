@@ -80,7 +80,7 @@ module.exports = {
     "vue/prefer-true-attribute-shorthand": ["error", "always"],
     "vue/require-direct-export": "error",
     "vue/require-emit-validator": "error",
-    "vue/require-expose": "error",
+    "vue/require-expose": "off",
     "vue/require-name-property": "error",
     "vue/v-for-delimiter-style": ["error", "of"],
     "vue/v-on-function-call": ["error", "never"],
