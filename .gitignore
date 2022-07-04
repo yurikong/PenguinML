@@ -2,6 +2,7 @@
 node_modules
 /dist
 
+inspect.js
 
 # local env files
 .env.local
