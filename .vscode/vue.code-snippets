@@ -1,0 +1,35 @@
+{
+  "vue": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      "$1",
+      "</template>\n",
+      "<script setup lang=\"ts\">",
+      "$2",
+      "</script>\n",
+      "<style scoped lang=\"scss\">",
+      "$3",
+      "</style>"
+    ],
+    "description": "Vue boilerplates"
+  },
+  "script-setup": {
+    "prefix": "setup",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$0",
+      "</script>"
+    ],
+    "description": "Script setup block"
+  },
+  "style": {
+    "prefix": "ste",
+    "body": [
+      "<style scoped lang=\"scss\">",
+      "$0",
+      "</style>"
+    ],
+    "description": "Style block"
+  }
+}
