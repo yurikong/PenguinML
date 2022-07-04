@@ -1,29 +1,10 @@
-# penguin-ml
+# Penguin ML [![Build Status](https://app.travis-ci.com/yurikong/PenguinML.svg?branch=main)](https://app.travis-ci.com/yurikong/PenguinML)
 
-## Project setup
-```
-yarn install
-```
+### Welcome to Penguin Machine Learning Platform!
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+&nbsp;
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### This platform allows you to:
+  - Prepare, process, and train your data...
+  - Monitor traning progress...
+  - Visualize traning results...
