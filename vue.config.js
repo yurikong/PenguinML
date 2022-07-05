@@ -17,6 +17,15 @@ module.exports = defineConfig({
       },
     },
   },
+  css: {
+    loaderOptions: {
+      less: {
+        lessOptions: {
+          javascriptEnabled: true,
+        },
+      },
+    },
+  },
   chainWebpack: (config) => {
     config.resolve.alias.set("@", resolve("src"))
     config.plugin("html").tap((args) => {
@@ -38,6 +47,13 @@ module.exports = defineConfig({
           test: resolve("src/components"),
           minChunks: 2,
           priority: 5,
+          reuseExistingChunk: true,
+        },
+        "ant-design-vue": {
+          name: "ant-design-vue",
+          test: /[\\/]node_modules[\\/]ant-design-vue[\\/]/,
+          priority: 10,
+          chunks: "initial",
           reuseExistingChunk: true,
         },
       },
